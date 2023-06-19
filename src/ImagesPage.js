@@ -2,12 +2,12 @@
 import React from 'react';
 
 const ImagesPage = () => {
-  const imagePaths = ['src\images\bulbasaur.jpg', 'src\images\charmander.png', 'src\images\squirtle.png'];
+  const imagePaths = ['src/images/bulbasaur.jpg', 'src/images/charmander.png', 'src/images/squirtle.png'];
 
   return (
     <div>
       {imagePaths.map((path, index) => (
-        <img key={index} src={require(`./${path}`).default} alt={`Image ${index + 1}`} />
+        <img key={index} src={require(`./${path}`).default} alt={`${index + 1}`} />
       ))}
     </div>
   );
